@@ -1,0 +1,86 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Gamedev Canvas Workshop</title>
+    <style>
+    	body{ 
+    		padding: 0; 
+    		margin: 0; 
+    	}
+    	#scoreh1 {
+    		margin-left: 4%;
+    		margin-bottom: 0;
+    		font-family: courier;
+    	}
+    	#scoreboard	{
+    		background: black;
+    		width: 200px;
+    		height: 100px;
+    		float:left;
+    		margin: 1%;
+    		margin-top: 0;
+    		font-family: courier;
+    		font-size: 20px;
+    		color:white;
+    		text-align: center;
+    	}
+    	#level {
+    		clear: both;
+    		float:left;
+    		font-family: courier;
+    		font-size: 30px;
+    		color:black;
+    		font-weight: bold;
+    		margin:1%;
+    	}
+    	#lives {
+    		clear: both;
+    		float: left;
+    		font-family: courier;
+    		font-size: 30px;
+    		color:black;
+    		font-weight: bold;
+    		margin:1%;
+    	}
+    	canvas { 
+    		background: black; 
+    		display: block; 
+    		margin: 0 auto; 
+    		position: relative;
+    	}
+    	#gameMenu{
+    		width: 500px;
+    		height: 300px;
+    		background-color: white;
+    		display: block;
+    		margin:0 auto;
+    		position: absolute;
+    		top:30%;
+    		left: 35%;
+    		font-family: courier;
+    		opacity: .5;
+    		font-weight: bold;
+    	}
+    	#startButton{
+    		display: block;
+    		margin: 0 auto;
+    		font-size: 25px;
+    		font-family: courier;
+    	}
+    </style>
+</head>
+<body>
+	<h1 id="scoreh1">Score</h1>
+	<div id="top-container">
+		<div id="scoreboard"></div>
+		<div id="level">Level 1</div>
+		<div id="lives">Lives 3</div>
+	</div>
+	<canvas id="myCanvas" width="880" height="500">
+	</canvas>
+	<div id="gameMenu">
+		<h1>Use left and right arrows to move paddle</h1>
+		<button onclick='startGame()' id="startButton">Start</button>
+	</div>	
+</body>
+</html>
